@@ -14,15 +14,22 @@ A professional API automation testing framework built with **Python**, **Pytest*
 ---
 
 ## 📊 Live Execution Reports (Allure)
-The framework is fully integrated with **Allure Report**, translating raw technical test executions into highly readable, executive-ready graphical dashboards. 
+The framework is fully integrated with **Allure Report**, translating raw technical test executions into highly readable graphical dashboards.
 
-### 1. High-Level Executive Dashboard
-*Displays a 100% test pass rate with execution metrics.*
-![Allure Dashboard](allure_dashboard.png)
-
-### 2. Technical Suites & Step-by-Step Breakdown
-*Demonstrates clear title mapping, layered test steps, and live JSON response attachments.*
-![Allure Suites](allure_suites.png)
+<table border="0">
+  <tr>
+    <td width="50%" align="center">
+      <b>1. Test Execution Dashboard</b><br>
+      <i>Displays a ~62.5% pass rate due to live public environment data volatility.</i><br><br>
+      <img src="allure_dashboard.png" width="100%" alt="Allure Dashboard">
+    </td>
+    <td width="50%" align="center">
+      <b>2. Technical Suites & Steps</b><br>
+      <i>Demonstrates custom titles, layered steps, and dynamic JSON attachments.</i><br><br>
+      <img src="allure_suites.png" width="100%" alt="Allure Suites">
+    </td>
+  </tr>
+</table>
 
 ---
 
