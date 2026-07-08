@@ -61,15 +61,15 @@ In an enterprise environment, this would be resolved by using isolated test envi
    cd API_project_demo
 
 1. Install required dependencies:\
-2. 
+ 
    ✅ `pip install requests pytest allure-pytest`
 
 3. Execute tests and generate Allure logs:\
-4. 
+
    ✅ `pytest --alluredir=allure-results`
 
 5. Open the graphical Allure report in your browser:\
-6. 
+
    ✅ `allure serve allure-results`
 
 
