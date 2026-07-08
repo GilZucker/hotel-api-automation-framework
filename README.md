@@ -60,13 +60,13 @@ In an enterprise environment, this would be resolved by using isolated test envi
    git clone <YOUR_REPOSITORY_URL_HERE>
    cd API_project_demo
 
-2. Install required dependencies: </b>
-✅ pip install requests pytest allure-pytest
+1. Install required dependencies:
+   ✅ `pip install requests pytest allure-pytest`
 
-3. Execute tests and generate Allure logs: </b>
-✅ pytest --alluredir=allure-results
+2. Execute tests and generate Allure logs:
+   ✅ `pytest --alluredir=allure-results`
 
-4. Open the graphical Allure report in your browser: </b>
-✅ allure serve allure-results
+3. Open the graphical Allure report in your browser:
+   ✅ `allure serve allure-results`
 
 
