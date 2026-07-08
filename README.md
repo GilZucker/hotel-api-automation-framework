@@ -57,15 +57,6 @@ The framework is fully integrated with **Allure Report**, translating raw techni
 4. Open the graphical Allure report in your browser:
 ✅ allure serve allure-results
 
----
-
-## 📊 Reports Examples 
-
-![Allure Dashboard](allure_dashboard.png)   ![Allure Suite](allure_suite.png)
-
-<img width="1146" height="660" alt="image" src="https://github.com/user-attachments/assets/962d762c-ee86-474f-9d43-7235da7ccefd" />
-<img width="1157" height="1101" alt="image" src="https://github.com/user-attachments/assets/488b318b-5589-45cd-b7f7-9f20864a8445" />
-
 
 ---
 
