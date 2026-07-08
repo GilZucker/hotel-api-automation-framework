@@ -17,7 +17,7 @@ A professional API automation testing framework built with **Python**, **Pytest*
 The framework is fully integrated with **Allure Report**, translating raw technical test executions into highly readable graphical dashboards.
 
 <table border="0">
-  <tr>
+  <tr valign="bottom">
     <td width="50%" align="center">
       <b>1. Test Execution Dashboard</b><br>
       <i>Displays a ~62.5% pass rate due to live public environment data volatility.</i><br><br>
@@ -31,7 +31,19 @@ The framework is fully integrated with **Allure Report**, translating raw techni
   </tr>
 </table>
 
+
 ---
+
+### ⚠️ Environment & Test Stability Note (Real-World QA Insights)
+When running this framework against the public, shared `restful-booker` live server, you might occasionally observe some failed tests (e.g., a ~62% pass rate). 
+
+As a professional QA Automation Engineer, this is a calculated and expected behavior due to **Shared Environment State**:
+1. **Data Volatility:** Multiple automation scripts worldwide constantly modify, update, and delete bookings (like IDs 10 and 11) simultaneously.
+2. **Hardcoded vs. Dynamic Dependencies:** While local execution against a stable `localhost` database yields 100% success, live public end-points naturally suffer from environment instability.
+
+**How to address this in a production framework:**
+In an enterprise environment, this would be resolved by using isolated test environments (Dockerized containers), running DB seed scripts before each execution to ensure a clean state, or using dynamic data creation exclusively instead of targeting static IDs.
+
 
 ## 🛠️ Tech Stack & Libraries
 * **Language:** Python 3
@@ -58,14 +70,3 @@ The framework is fully integrated with **Allure Report**, translating raw techni
 ✅ allure serve allure-results
 
 
----
-
-### ⚠️ Environment & Test Stability Note (Real-World QA Insights)
-When running this framework against the public, shared `restful-booker` live server, you might occasionally observe some failed tests (e.g., a ~62% pass rate). 
-
-As a professional QA Automation Engineer, this is a calculated and expected behavior due to **Shared Environment State**:
-1. **Data Volatility:** Multiple automation scripts worldwide constantly modify, update, and delete bookings (like IDs 10 and 11) simultaneously.
-2. **Hardcoded vs. Dynamic Dependencies:** While local execution against a stable `localhost` database yields 100% success, live public end-points naturally suffer from environment instability.
-
-**How to address this in a production framework:**
-In an enterprise environment, this would be resolved by using isolated test environments (Dockerized containers), running DB seed scripts before each execution to ensure a clean state, or using dynamic data creation exclusively instead of targeting static IDs.
